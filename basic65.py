@@ -1,0 +1,1 @@
+# wap to input a number, if it is not a number generates and error message
