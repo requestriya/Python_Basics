@@ -1,8 +1,16 @@
 # wap to get the n (non-negative integr) copies of the first 2 characters of a given string. 
 # Return the n copies of the whole string if the length is less than 2
 
-n = 3
+def substring_copy(str, n):
+    flen = 2
+    if flen > len(str):
+        flen = len(str)
+        substr = str[:flen]
 
-strng_val = "Riya"
-string_val2 = strng_val[0]+strng_val[1]
-print(string_val2[n])
+        result = ""
+        for i in range(n):
+            result = result + substr
+        return result
+
+print(substring_copy('abcdef', 2))
+print(substring_copy('p', 3))
